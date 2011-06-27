@@ -43,7 +43,7 @@ def _send_file(album, request):
     try:
         file = request.FILES['file']
         photo = Photo(content_object=album)
-        print photo, type(photo.image)
+        #print photo, type(photo.image)
         photo.image.save(file.name, file)
 
         photo.save()

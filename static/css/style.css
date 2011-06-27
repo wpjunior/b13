@@ -56,7 +56,6 @@ h3 {
 img {
 	background: #FAFAFA;
    border: 1px solid #E5E5E5;
-	padding: 5px;
 }
 img.float-right {
   margin: 5px 0px 10px 10px;  
@@ -219,7 +218,7 @@ input.button {
 #header h1#logo-text a {
 	position: absolute;
 	margin: 0; padding: 0;
-	font: bolder 44px 'Trebuchet MS', Arial, Sans-serif;
+	font: bolder 30px 'Trebuchet MS', Arial, Sans-serif;
 	letter-spacing: -2px;
 	color: #FFF;
 	text-transform: none;
@@ -399,5 +398,73 @@ input.button {
 
 /* display and additional classes */
 .clear { clear: both; }
+.nohidden {
+    display: block;
+}
+.mini-slider li {
+    padding: 0px;
+}
+span.tools {display: block;}
+.ui-icon {display: inline-block;}
+.mini-slider { padding: 0px; margin: 0px}
+#photo-upload {float: right; }
+.hidden {display: none;}
+#album {margin-top: 10px; overflow: hidden;}
+textarea.mce {width: 650px; height: 600px; display: block;}
+div.photo {display: inline-block; float: left; margin: 2px;}
+div.photo-container, div.album-container {position: relative;}
+div.photo p, div.album p {margin: 1px; text-align: center; padding: 0px;}
+div.album {display: inline-block; float: left; margin: 2px; position: relative;}
+div.album p.title {margin: 3px; text-align: center; font-weight: bold;}
+div#editwindow {display: none;}
+a.iframe {float: left;}
+#videolist, #albumlist {margin-top: 10px;}
+div.video {display: inline-block; width: 600px; height: 250px; float: left;}
+div.desc {display: inline-block; margin: 0px; margin-left: 10px;}
+div.desc h3 {margin: 0px;}
+div.video p.tools {display: none; margin: 0px; padding: 0px}
+div.video:hover p.tools {display: inline;}
+div#clean {background: rgb(188, 188, 188); margin: 10px 0px 10px 1px; width: 570px; height: 1px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 1px; border-bottom-style: solid;}
+div.top {float: none;}
+.caption {
+    text-align: center;
+    margin: 0px;
+    width:200px;
+    height:35px;
+    background:#000;
+    color:#fff;
+    position:absolute;  
+    bottom:-1px; /* fix IE issue */  
+    left:0;  
+    display:none;  
+    filter:alpha(opacity=70);    /* ie  */  
+    -moz-opacity:0.7;    /* old mozilla browser like netscape  */  
+    -khtml-opacity: 0.7;    /* for really really old safari */    
+    opacity: 0.7;    /* css standard, currently it works in most modern browsers like firefox,  */  
 
-
+}
+.notice-caption {
+    margin: 0px;
+    width:400px;
+    height:65px;
+    background:#000;
+    color:#fff;
+    position:absolute;  
+    bottom:-1px; /* fix IE issue */  
+    left:0;
+    padding: 3px;
+    filter:alpha(opacity=70);    /* ie  */  
+    -moz-opacity:0.7;    /* old mozilla browser like netscape  */  
+    -khtml-opacity: 0.7;    /* for really really old safari */    
+    opacity: 0.7;    /* css standard, currently it works in most modern browsers like firefox,  */  
+}
+.notice-caption h3 {
+    color: white;
+    margin: 2px;
+    font-size: 14px;
+    font-weight: bold;
+}
+li.li-photo img {
+    padding: 0px !important;
+    border: 0px;
+}
