@@ -1,0 +1,4 @@
+*.pyc
+./static
+static/photos/*
+static/news/*
