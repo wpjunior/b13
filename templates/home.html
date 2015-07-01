@@ -7,16 +7,16 @@
 {% block sidebar %}
 <div id="sidebar">
 		{% if albums %}
-<h3>Últimos Albuns</h3>
+<h3>Últimos Álbuns</h3>
 	<ul class="mini-slider">
           {% for album in albums %}
 	  <li class="li-photo">
 	    <a href="{{ album.get_absolute_url }}">
-	      <img src="{{ album.get_first_photo_thumbnail }}" alt="{{ album.name }}"/> 
+	      <img src="{{ album.get_first_photo_thumbnail }}" alt="{{ album.name }}"/>
 	    </a>
 	    <div class="caption nohidden">
 	      <b>{{ album.name }}</b>
-	    </div> 
+	    </div>
 	  </li>
 	  {% endfor %}
 	</ul>
@@ -38,8 +38,8 @@
 	{% if notices %}
 	<ul class="slider">
           {% for notice in notices %}
-	  <li class="li-photo"> 
-	    <img src="{{ notice.image.url }}" alt="{{ notice.name }}"/> 
+	  <li class="li-photo">
+	    <img src="{{ notice.image.url }}" alt="{{ notice.name }}"/>
 		<div class="notice-caption">
 		  <a href="{{notice.get_absolute_url }}"><h3>{{ notice.name }}</h3></a>
 		  <p><small>Postado em {{ notice.date }} por {% firstof notice.user.get_full_name notice.user.username %}
@@ -48,14 +48,14 @@
 		      <a href="/news/delete/{{ notice.id }}/">Apagar</a>
 		      {% endif %}
 		  </small></p>
-		</div> 
+		</div>
 	  </li>
 	  {% endfor %}
 	</ul>
 	{% endif %}
       </div>
     </div>
-    
+
   </div>
 </div>
 {% endblock %}

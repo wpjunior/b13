@@ -12,7 +12,7 @@
 <title>Corporação Musical 13 de Maio</title>
 
 <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" />
-<script type="text/javascript" src="/static/js/jquery.min.js"></script> 
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
 
     <script type="text/javascript" src="{{ STATIC_URL }}/js/crsf.js"></script>
 
@@ -28,16 +28,16 @@
 <body>
 <!-- wrap starts here -->
 <div id="wrap">
-		
+
 		<!--header -->
-		<div id="header">			
-				
-			<h1 id="logo-text"><a href="/home/">Corporação Musical "13 de Maio"</a></h1>		
+		<div id="header">
+
+			<h1 id="logo-text"><a href="/home/">Corporação Musical "13 de Maio"</a></h1>
 			<p id="slogan">Fundada em 1890 - <a href="http://www.corumbatur.com.br" style="color: white;">Corumbá de Goiás</a></p>
-						
+
 		</div>
-		
-		<!-- menu -->	
+
+		<!-- menu -->
 		<div  id="menu">
 			<ul>
 				<li id="current"><a href="/home/">Início</a></li>
@@ -47,31 +47,30 @@
 				<li><a href="/albuns/">Fotos</a></li>
 				<li><a href="/videos/">Vídeos</a></li>
 				<li><a href="/faleconosco/">Fale Conosco</a></li>
-				<li class="last"><a href="/diretoria/">Diretoria</a></li>		
+				<li class="last"><a href="/diretoria/">Diretoria</a></li>
 			</ul>
-		</div>					
-			
+		</div>
+
 		<!-- content-wrap starts here -->
 		<div id="content-wrap">
-			{% block sidebar %}	
-			
-			{% endblock %}	
+			{% block sidebar %}
+
+			{% endblock %}
 			<div id="main">
 				{% block content %}
                                 {% endblock %}
 
 			</div>
-		        
-		        <!-- content-wrap ends here -->	
+
+		        <!-- content-wrap ends here -->
 		</div>
-		
+
 		<!--footer starts here-->
 		<div id="footer">
                   {% block extrafooter %}
                   {% endblock %}
 		  <p>
-		    &copy; 2011 <strong>Corporação Musical 13 de Maio</strong> | 
-		    Feito por: <a href="mailto:wilsonpjunior@gmail.com">Wilson Júnior</a>|
+		    &copy; 2011 <strong>Corporação Musical 13 de Maio</strong> |
 		    {% if request.user.is_authenticated %}
 		    <span>Bem Vindo {{ request.user.username }}</span> -
 		    <a href="/auth/logout/">Sair</a>
